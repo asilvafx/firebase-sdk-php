@@ -8,11 +8,11 @@ require __DIR__ . '/vendor/autoload.php';
 
 use Kreait\Firebase\Factory;
 
-$projectId = 'crypto-fx-d65f4';
-$databaseUrl = 'https://crypto-fx-d65f4-default-rtdb.firebaseio.com/';
+$projectId = 'YOUR_FIREBASE_PROJECT_ID';
+$databaseUrl = 'https://YOUR_FIREBASE_DB_URL.firebaseio.com/';
 
 // Replace with the path to your service account key file
-$keyFilePath = 'json/crypto-fx-d65f4-e5462e6c155b.json';
+$keyFilePath = 'json/YOUR_SERVICE_ACCOUNT.json';
 
 $factory = (new Factory)
     ->withServiceAccount($keyFilePath)

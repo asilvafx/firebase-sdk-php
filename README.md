@@ -9,7 +9,7 @@ This repository demonstrates how to interact with a database using simple CRUD (
   - [Get Table Data](#get-table-data)
   - [Get Item Data by Search Query](#get-item-data-by-search-query)
   - [Post New User Data](#post-new-user-data)
-  - [Get Item Key by UID](#get-item-key-by-uid)
+  - [Get Item Key by Search Query](#get-item-key-by-search-query)
   - [Update Existing User Data](#update-existing-user-data)
   - [Delete User Data](#delete-user-data)
 

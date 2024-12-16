@@ -39,7 +39,7 @@ $db = new DBService();
     }
 */
 
-// POST new user data
+// POST new data
 /*
     $postData = [
     'avatar' => 'https://example.com/avatar.png',
@@ -53,7 +53,7 @@ $db = new DBService();
     $db->postData('users', $postData);
 */
 
-// UPDATE existing user data
+// UPDATE existing data
 /*
     $updateData = [
     'credits' => 150
@@ -61,7 +61,7 @@ $db = new DBService();
     $db->updateData('users' . $userKey, $updateData);
 */
 
-// DELETE user data
+// DELETE data
 /*
     $db->deleteData('users' . $userKey);
 */

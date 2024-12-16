@@ -97,7 +97,7 @@ class DbService {
     }
 
     /**
-     * Get Data by Search Query
+     * Get Item Data by Search Query
      *
      * @param $table
      * @param $query
@@ -105,7 +105,7 @@ class DbService {
      * @return string|null The data key if found, null otherwise
      * @throws DatabaseException
      */
-    function getDataByQuery($table, $query, $search) {
+    function getItem($table, $query, $search) {
         $data = $this->getData($table);
 
         if (is_array($data)) {

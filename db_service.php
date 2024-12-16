@@ -83,7 +83,7 @@ class DbService {
      * @return string|null The data key if found, null otherwise
      * @throws DatabaseException
      */
-    function getKeyByQuery($table, $query, $search) {
+    function getItemKey($table, $query, $search) {
         $data = $this->getData($table);
 
         if (is_array($data)) {
@@ -94,7 +94,7 @@ class DbService {
             }
         }
         return null; // Return null if Query not found
-    }
+    } 
 
     /**
      * Get Item Data by Search Query

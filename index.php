@@ -17,7 +17,10 @@ $db = new DBService();
 
 // Get item data by Search Query
 /*
-    $itemData = $db->getItem('users', 'uid', 'XXXXXX');
+    $queryToFind = 'uid';
+    $searchToFind = 'XXXXXXXX';
+    $tableToFind = 'users';
+    $itemData = $db->getItem($tableToFind, $queryToFind, $searchToFind);
     print_r($itemData);
 */
 
@@ -41,7 +44,7 @@ $db = new DBService();
     $searchToFind = 'bdd62134-3e25-47a4-859b-b70268504a0d';
     $tableToFind = 'users';
 
-    $userKey = $db->getKeyByQuery($tableToFind, $queryToFind, $searchToFind);
+    $userKey = $db->getItemKey($tableToFind, $queryToFind, $searchToFind);
     if ($userKey) {
         echo "DB: $tableToFind | UID: $searchToFind | KEY: $userKey\n";
     } else {

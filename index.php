@@ -8,7 +8,7 @@ require_once('db_service.php');
  
 $db = new DBService(); 
 
-// EXAMPLE USAGE
+// EXAMPLES
 
 // Get table data
 /*

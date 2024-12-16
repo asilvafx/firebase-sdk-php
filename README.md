@@ -1,62 +1,16 @@
-# firebase-sdk-php
 
+# PHP Firebase SDK NoSQL Realtime Database
 
-run composer install
+This repository demonstrates how to interact with a database using simple CRUD (Create, Read, Update, Delete) operations in PHP. The examples provided showcase how to get table data, search for items, post new data, update existing data, and delete data.
 
+## Table of Contents
 
-// Example usage
-// Get table data
-/*
-    $tableData = $db->getData('users');
-    print_r($tableData);
-*/
+- [Example Usage](#example-usage)
+  - [Get Table Data](#get-table-data)
+  - [Get Item Data by Search Query](#get-item-data-by-search-query)
+  - [Post New User Data](#post-new-user-data)
+  - [Get Item Key by UID](#get-item-key-by-uid)
+  - [Update Existing User Data](#update-existing-user-data)
+  - [Delete User Data](#delete-user-data)
 
-// Get item data by Search Query
-/*
-    $queryToFind = 'uid';
-    $searchToFind = 'XXXXXXXX';
-    $tableToFind = 'users';
-    $itemData = $db->getItem($tableToFind, $queryToFind, $searchToFind);
-    print_r($itemData);
-*/
-
-// Post new user data
-/*
-    $postData = [
-    'avatar' => 'https://example.com/avatar.png',
-    'credits' => 100,
-    'displayName' => 'New User',
-    'email' => 'newuser@example.com',
-    'password' => 'hashed_password',
-    'status' => '',
-    'uid' => 'unique_user_id'
-    ];
-    $db->postData('users', $postData);
-*/
-
-// Get item key by UID
-/*
-    $queryToFind = 'uid';
-    $searchToFind = 'bdd62134-3e25-47a4-859b-b70268504a0d';
-    $tableToFind = 'users';
-
-    $userKey = $db->getItemKey($tableToFind, $queryToFind, $searchToFind);
-    if ($userKey) {
-        echo "DB: $tableToFind | UID: $searchToFind | KEY: $userKey\n";
-    } else {
-        echo "DB: $tableToFind | UID: $searchToFind | KEY: Not found.\n";
-    }
-*/
-
-// Update existing user data
-/*
-    $updateData = [
-    'credits' => 150
-    ];
-    $db->updateData('users' . $userKey, $updateData);
-*/
-
-// Delete user data
-/*
-    $db->deleteData('users' . $userKey);
-*/
+---

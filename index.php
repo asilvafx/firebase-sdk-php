@@ -8,7 +8,8 @@ require_once('db_service.php');
  
 $db = new DBService(); 
 
-// Example usage
+// EXAMPLE USAGE
+
 // Get table data
 /*
     $tableData = $db->getData('users');
@@ -38,7 +39,7 @@ $db = new DBService();
     $db->postData('users', $postData);
 */
 
-// Get item key by UID
+// Get item key by Search Query
 /*
     $queryToFind = 'uid';
     $searchToFind = 'bdd62134-3e25-47a4-859b-b70268504a0d';
@@ -46,9 +47,9 @@ $db = new DBService();
 
     $userKey = $db->getItemKey($tableToFind, $queryToFind, $searchToFind);
     if ($userKey) {
-        echo "DB: $tableToFind | UID: $searchToFind | KEY: $userKey\n";
+        echo "KEY: $userKey\n";
     } else {
-        echo "DB: $tableToFind | UID: $searchToFind | KEY: Not found.\n";
+        echo "KEY: Not found.\n";
     }
 */
 
